@@ -1,5 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { Link } from 'react-router-dom';
+import PitchersAnCatchers from './PitchersNCatchers';
 
 export default function Countdown() {
   const [timerDays, setTimerDays] = useState('00');
@@ -55,36 +56,47 @@ export default function Countdown() {
             </Link>
           </div>
           <br />
-          <div className="count-down-timer">
-            <section>
-              <p>{timerDays}</p>
-              <p>
-                <small>Days</small>
-              </p>
-            </section>
-            <span>:</span>
-            <section>
-              <p>{timerHours}</p>
-              <p>
-                <small>Hours</small>
-              </p>
-            </section>
-            <span>:</span>
-            <section>
-              <p>{timerMinutes}</p>
-              <p>
-                <small>Minutes</small>
-              </p>
-            </section>
-            <span>:</span>
-            <section>
-              <p>{timerSeconds}</p>
-              <p>
-                <small>Seconds</small>
-              </p>
-            </section>
-          </div>
           <div>
+            <p className="counter-titles">
+              <small>Pitchers and Catchers Report</small>
+            </p>
+          </div>
+          <PitchersAnCatchers />
+          <div>
+            <div>
+              <p className="counter-titles">
+                <small>First Spring Training Game</small>
+              </p>
+            </div>
+            <div className="count-down-timer">
+              <section>
+                <p>{timerDays}</p>
+                <p>
+                  <small>Days</small>
+                </p>
+              </section>
+              <span>:</span>
+              <section>
+                <p>{timerHours}</p>
+                <p>
+                  <small>Hours</small>
+                </p>
+              </section>
+              <span>:</span>
+              <section>
+                <p>{timerMinutes}</p>
+                <p>
+                  <small>Minutes</small>
+                </p>
+              </section>
+              <span>:</span>
+              <section>
+                <p>{timerSeconds}</p>
+                <p>
+                  <small>Seconds</small>
+                </p>
+              </section>
+            </div>
             <Link className="nav-link tickets" to="/tickets">
               Get Tickets To A Game!
             </Link>

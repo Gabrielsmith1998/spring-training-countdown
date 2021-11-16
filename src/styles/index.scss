@@ -28,6 +28,7 @@ body {
 .count-down-timer {
   border: 1px solid black;
   border-radius: 3px;
+  background-color: rgba(255, 255, 255, 0.783);
   display: grid;
   font-size: 20px;
   grid-template-columns: repeat(7, 1fr);
@@ -38,5 +39,9 @@ body {
 }
 
 .tickets {
+  text-align: center;
+}
+
+.counter-titles {
   text-align: center;
 }
