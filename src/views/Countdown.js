@@ -48,7 +48,10 @@ export default function Countdown() {
           <div className="countdown-header">
             <h2>Countdown To Spring Training</h2>
             <Link className="nav-link active" to="/openingday">
-              Opening Day
+              Opening Day Countdown
+            </Link>
+            <Link className="nav-link active" to="/schedule">
+              MLB Schedule
             </Link>
           </div>
           <br />
@@ -80,6 +83,11 @@ export default function Countdown() {
                 <small>Seconds</small>
               </p>
             </section>
+          </div>
+          <div>
+            <Link className="nav-link tickets" to="/tickets">
+              Get Tickets To A Game!
+            </Link>
           </div>
         </section>
       </section>

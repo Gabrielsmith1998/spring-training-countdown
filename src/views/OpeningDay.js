@@ -50,6 +50,9 @@ export default function OpeningDay() {
             <Link className="nav-link active" to="/">
               Spring Training
             </Link>
+            <Link className="nav-link active" to="/schedule">
+              MLB Schedule
+            </Link>
           </div>
           <br />
           <div className="count-down-timer">
