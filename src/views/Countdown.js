@@ -85,7 +85,7 @@ export default function Countdown() {
             </section>
           </div>
           <div>
-            <Link className="nav-link tickets" to="/tickets">
+            <Link className="nav-link tickets" to="/schedule">
               Get Tickets To A Game!
             </Link>
           </div>
