@@ -2,6 +2,7 @@ import React from 'react';
 import { Route, Switch } from 'react-router-dom';
 import Countdown from '../views/Countdown';
 import OpeningDay from '../views/OpeningDay';
+import Schedule from '../views/Schedule';
 
 export default function Routes() {
   return (
@@ -24,10 +25,10 @@ export default function Routes() {
         <Route
           exact
           path="/tickets"
-          component={() => {
+          component={Schedule(() => {
             window.location.href = 'https://www.mlb.com/tickets';
             return null;
-          }}
+          })}
         />
       </Switch>
     </>
