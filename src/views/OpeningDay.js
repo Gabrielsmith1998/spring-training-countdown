@@ -84,6 +84,11 @@ export default function OpeningDay() {
               </p>
             </section>
           </div>
+          <div>
+            <Link className="nav-link tickets" to="/schedule">
+              Get Tickets To A Game!
+            </Link>
+          </div>
         </section>
       </section>
     </>
