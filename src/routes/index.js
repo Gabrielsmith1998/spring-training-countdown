@@ -13,22 +13,6 @@ export default function Routes() {
         <Route exact path="/openingday">
           <OpeningDay />
         </Route>
-        <Route
-          exact
-          path="/schedule"
-          component={() => {
-            window.location.href = 'https://www.mlb.com/schedule';
-            return null;
-          }}
-        />
-        <Route
-          exact
-          path="/tickets"
-          component={() => {
-            window.location.href = 'https://www.mlb.com/tickets';
-            return null;
-          }}
-        />
       </Switch>
     </>
   );

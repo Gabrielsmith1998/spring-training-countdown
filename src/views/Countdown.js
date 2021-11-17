@@ -51,9 +51,22 @@ export default function Countdown() {
             <Link className="nav-link active" to="/openingday">
               Opening Day Countdown
             </Link>
-            <Link className="nav-link active" to="/schedule">
+            <a
+              href="https://www.mlb.com/schedule"
+              target="_blank"
+              rel="noreferrer noopener"
+            >
               MLB Schedule
-            </Link>
+            </a>
+            <br />
+            <a
+              href="https://www.mlb.com/tickets"
+              target="_blank"
+              rel="noreferrer noopener"
+              className="text-center"
+            >
+              Get tickets to a game!
+            </a>
           </div>
           <br />
           <div>
@@ -97,9 +110,6 @@ export default function Countdown() {
                 </p>
               </section>
             </div>
-            <Link className="nav-link tickets" to="/tickets">
-              Get Tickets To A Game!
-            </Link>
           </div>
         </section>
       </section>
