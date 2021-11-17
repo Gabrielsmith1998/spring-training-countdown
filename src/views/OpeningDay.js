@@ -50,9 +50,23 @@ export default function OpeningDay() {
             <Link className="nav-link active" to="/">
               Spring Training Countdown
             </Link>
-            <Link className="nav-link active" to="/schedule">
+            <a
+              href="https://www.mlb.com/schedule"
+              target="_blank"
+              rel="noreferrer noopener"
+              className="links"
+            >
               MLB Schedule
-            </Link>
+            </a>
+            <br />
+            <a
+              href="https://www.mlb.com/tickets"
+              target="_blank"
+              rel="noreferrer noopener"
+              className="links"
+            >
+              Get tickets to a game!
+            </a>
           </div>
           <br />
           <div className="count-down-timer">
@@ -83,11 +97,6 @@ export default function OpeningDay() {
                 <small>Seconds</small>
               </p>
             </section>
-          </div>
-          <div>
-            <Link className="nav-link tickets" to="/tickets">
-              Get Tickets To A Game!
-            </Link>
           </div>
         </section>
       </section>
